@@ -8,9 +8,12 @@ import './assets/style/reset.css'
 import './assets/style/border.css'
 import './assets/style/iconfont.css'
 import 'lib-flexible'
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+import 'swiper/dist/css/swiper.css'
 
 Vue.config.productionTip = false
 fastClick.attach(document.body)
+Vue.use(VueAwesomeSwiper)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
