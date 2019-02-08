@@ -4,7 +4,7 @@
     <ul>
       <li
         class="item border-bottom"
-        v-for="item of recommendList"
+        v-for="item of list"
         :key="item.id"
       >
         <div class="item-img-wrapper">
@@ -22,54 +22,14 @@
 <script>
 export default {
   name: 'recommend',
-  data () {
-    return {
-      recommendList: [
-        {
-          id: '001',
-          imgUrl: 'http://img1.qunarzz.com/sight/source/1505/a3/9c9d78e925e8bc.jpg_r_640x214_74656d68.jpg',
-          title: '故宫',
-          desc: '世界五大宫之首，穿越与您近在咫尺'
-        },
-        {
-          id: '002',
-          imgUrl: 'http://img1.qunarzz.com/sight/source/1505/a3/9c9d78e925e8bc.jpg_r_640x214_74656d68.jpg',
-          title: '故宫',
-          desc: '世界五大宫之首，穿越与您近在咫尺'
-        },
-        {
-          id: '003',
-          imgUrl: 'http://img1.qunarzz.com/sight/source/1505/a3/9c9d78e925e8bc.jpg_r_640x214_74656d68.jpg',
-          title: '故宫',
-          desc: '世界五大宫之首，穿越与您近在咫尺'
-        },
-        {
-          id: '004',
-          imgUrl: 'http://img1.qunarzz.com/sight/source/1505/a3/9c9d78e925e8bc.jpg_r_640x214_74656d68.jpg',
-          title: '故宫',
-          desc: '世界五大宫之首，穿越与您近在咫尺'
-        },
-        {
-          id: '005',
-          imgUrl: 'http://img1.qunarzz.com/sight/source/1505/a3/9c9d78e925e8bc.jpg_r_640x214_74656d68.jpg',
-          title: '故宫',
-          desc: '世界五大宫之首，穿越与您近在咫尺'
-        },
-        {
-          id: '006',
-          imgUrl: 'http://img1.qunarzz.com/sight/source/1505/a3/9c9d78e925e8bc.jpg_r_640x214_74656d68.jpg',
-          title: '故宫',
-          desc: '世界五大宫之首，穿越与您近在咫尺'
-        }
-      ]
-    }
+  props: {
+    list: Array
   }
 }
 </script>
 
 <style scoped>
   .title {
-    margin-top: 20px;
     line-height: 80px;
     background: #eee;
     text-indent: 20px;
