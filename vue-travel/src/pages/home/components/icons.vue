@@ -5,8 +5,8 @@
                 <div class="icon" v-for="item of page" :key="item.id" >
                     <div class="icon-img">
                         <img class="icon-img-content" :src="item.imgUrl" alt="">
-                        <p class="icon-desc">{{item.desc}}</p>
                     </div>
+                    <p class="icon-desc">{{item.desc}}</p>
                 </div>
             </swiper-slide>
         </swiper>
@@ -89,7 +89,10 @@ export default {
 <style scoped>
     .icons >>> .swiper-container {
         height: 0;
-        padding-bottom: 50%
+        padding-bottom: 50%;
+    }
+    .icons{
+        margin-top: 10px;
     }
     .icon{
         position: relative;
@@ -104,7 +107,7 @@ export default {
         top: 0;
         left: 0;
         right: 0;
-        bottom: 44px;
+        bottom: 14px;
         box-sizing: border-box;
         padding: 10px;
     }
