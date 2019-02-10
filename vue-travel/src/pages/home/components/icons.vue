@@ -63,7 +63,7 @@ export default {
         top: 0;
         left: 0;
         right: 0;
-        bottom: 14px;
+        bottom: 24px;
         box-sizing: border-box;
         padding: 10px;
     }
